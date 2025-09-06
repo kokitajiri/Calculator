@@ -1,0 +1,47 @@
+class taskmanager():
+    
+    def __init__(self):
+        self.task = []
+    
+    def add_task(self, name):
+            task = {"name": name, "done": False}
+            self.task.append(task)
+            print(f"Task '{name}' has been added.")
+    
+    def show_task(self):
+        if not self.task:
+            print("There is no task.")
+        else:
+            print("Tasks:")
+            for i, task in enumerate(self.task, 1):
+                status = "Done✓" if task["done"] else "indcomplete"
+                print (f"{i}. {task['name']} - {status}")
+    
+    def complete_task(self, index):
+        if 0 < index <= len(self.task):
+            self.task[index - 1]["done"] = True 
+            print(f"task {self.task[index - 1]['name']} completed.")
+        else:
+            print("The task with taht number does not exist.")
+                
+    def remove_task(self, index):
+        if 0 < index <= len(self.task):
+            removed = self.task.pop(index - 1)
+            print(f"Task{removed['name']}is deleted.")
+        else:
+            print("The task with that number does not exsist.")
+                
+if __name__ == "__main__":
+    manager = taskmanager()
+    
+    manager.add_task("Write a report")
+    manager.add_task("Study")
+    manager.add_task("Shopping")
+    
+    manager.show_task()
+    
+    manager.complete_task(2)
+    manager.show_task()
+    
+    manager.remove_task(1)
+    manager.show_task()
