@@ -1,4 +1,4 @@
-#Calculator
+# Calculator
 This program is a **Calculator** with three functions:  
 ### 1.Calculator with four functions  
 ・Addidition( + )  
