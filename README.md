@@ -26,10 +26,13 @@ The program also includes **error handling**,  such as:
 This program is a **Task Manager** with four functions:  
 **[1] Add Task**  
 **[2] Show Tasks**  
-**[3]Complete Tasks**  
-**[4]Remove Tasks**  
-#### Main Featurs:
+**[3] Complete Tasks**  
+**[4] Remove Tasks**  
+**[5] Exit**  
+### Main Featurs:
 ・You can add and manage your daily tasks.  
 ・Unfinished tasks will be shown as **Incomplete**.  
 ・When a task is finished, you can mark it as **Done✓**.  
-・You can also remove tasks.
+・You can also remove tasks.  
+<br>
+**By integrating the database, tasks are now saved even after closing the file.**  
